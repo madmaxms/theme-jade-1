@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Jade-1
+Comment=Mixed light-dark gtk theme with green color accents developed for Linux Mint
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Jade-1
+MetacityTheme=Jade-1
+IconTheme=Jade
+CursorTheme=Jade
