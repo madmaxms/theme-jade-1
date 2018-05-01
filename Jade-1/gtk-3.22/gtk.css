@@ -1,32 +1,29 @@
-/* *********************************************************************** 
-                           O B S I D I A N  2
-              
-                            v2.4 (02.04.2018)
-                                
-                                GREEN
-                              "Bug Eyes"
-
- ------------------------------------------------------------------------
- A dark gray theme with green accents, created by MadMaxMS, based 
- upon Adwaita-Maia. 
+/* ***********************************************************************  
+                               J A D E   1
+               
+                            v3.0 (30.04.2018)
  
- Code available at Github:
- https://github.com/madmaxms/theme-obsidian-2
+  ------------------------------------------------------------------------
+  Mixed light-dark gtk theme with green color accents developed for 
+  Linux Mint based upon Obsidian 2.
+ 
+  Code available at Github:
+  https://github.com/madmaxms/theme-jade-1
  
  ------------------------------------------------------------------------
 
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
+  This program is free software: you can whiteistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version. 
 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ************************************************************************** */
 * {
@@ -144,10 +141,10 @@ headerbar .subtitle {
   text-shadow: none; }
 
 assistant .sidebar {
-  background-color: #f3f3f3;
+  background-color: #d6d6d6;
   border-top: 1px solid #7b7d7e; }
   assistant .sidebar:backdrop {
-    background-color: #f3f3f3;
+    background-color: #d6d6d6;
     border-color: #818283; }
 assistant.csd .sidebar {
   border-top-style: none; }
@@ -792,7 +789,7 @@ button.suggested-action {
   border-color: rgba(0, 0, 0, 0.5);
   border-bottom-color: rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom, #29c173, #22a663 40%, #22a462);
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.70353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.05); }
   .selection-mode button.titlebutton,
@@ -800,7 +797,7 @@ button.suggested-action {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
     color: #24b069; }
@@ -809,7 +806,7 @@ button.suggested-action {
     outline-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(0, 0, 0, 0.5);
     border-bottom-color: rgba(0, 0, 0, 0.5);
-    text-shadow: 0 -1px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.65553);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
     background-image: linear-gradient(to bottom, #39d183, #32b673 40%, #32b472);  }
@@ -1766,7 +1763,7 @@ headerbar {
   box-shadow: inset 0 1px rgba(238, 238, 236, 0.07); }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
-    border-color: #a9a9a9;
+    border-color: #0b0c0c;
     background-color: #393f3f;
     background-image: none;
     box-shadow: inset 0 1px rgba(238, 238, 236, 0.07);
@@ -2362,7 +2359,7 @@ menubar,
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1); }
   menubar:backdrop,
   .menubar:backdrop {
-    background-color: #393f3f; 
+    background-color: #393f3f;
     color: #c7fcc7; }
   menubar > menuitem,
   .menubar > menuitem {
@@ -2495,6 +2492,12 @@ menuitem radio {
   menuitem check:dir(rtl),
   menuitem radio:dir(rtl) {
     margin-left: 7px; }
+
+.mate-panel-menu-bar, .mate-panel-menu-bar menubar,
+panel-toplevel.background,
+panel-toplevel.background menubar {
+  background-color: #d6d6d6; 
+}
 
 /***************
  * Popovers   *
@@ -2732,9 +2735,9 @@ notebook > header {
   notebook > header.bottom tab {
     padding-top: 4px; }
 notebook > stack:not(:only-child) {
-  background-color: #f3f3f3; }
+  background-color: #d6d6d6; }
   notebook > stack:not(:only-child):backdrop {
-    background-color: #f3f3f3; }
+    background-color: #d6d6d6; }
 
 /**************
  * Scrollbars *
@@ -3928,12 +3931,12 @@ levelbar trough {
   border-radius: 3px;
   color: #212121;
   border-color: #818283;
-  background-color: #f3f3f3;
+  background-color: #d6d6d6;
   box-shadow: inset 0 0 0 1px rgba(22, 160, 110, 0); }
   levelbar trough:backdrop {
     color: #d3d4d5;
     border-color: #a9a9a9;
-    background-color: #f3f3f3;
+    background-color: #d6d6d6;
     box-shadow: none; }
 levelbar.horizontal.discrete block {
   margin: 0 1px; }
@@ -3992,13 +3995,13 @@ frame > border,
     border-style: none; }
   frame > border:backdrop,
   .frame:backdrop {
-    border-color: #a9a9a9; }
+    border-color: #0a0a0a; }
 
 actionbar > revealer > box {
   padding: 6px;
   border-top: 1px solid #7b7d7e; }
   actionbar > revealer > box:backdrop {
-    border-color: #a9a9a9; }
+    border-color: #0a0a0a; }
 
 scrolledwindow viewport.frame {
   border-style: none; }
@@ -4616,13 +4619,13 @@ colorchooser .popover.osd {
  * Misc *
  ********/
 .content-view {
-  background-color: #222728;
-  color: #f7f7f7; }
+  background-color: #f7f7f7;
+  color: #212121; }
   .content-view:hover {
     -gtk-icon-effect: highlight; }
   .content-view:backdrop {
-    background-color: #222728;
-    color: #f7f7f7; }
+    background-color: #f7f7f7;
+    color: #212121; }
 
 .osd .scale-popup button.flat {
   border-style: none;
@@ -5009,7 +5012,7 @@ widgets main borders color */
 @define-color borders #7b7d7e;
 /*
 widgets main borders color on backdrop windows */
-@define-color unfocused_borders #7b7d7e;
+@define-color unfocused_borders #0b0b0c;
 /*
 these are pretty self explicative */
 @define-color warning_color #f57900;
