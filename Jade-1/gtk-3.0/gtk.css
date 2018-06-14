@@ -721,7 +721,7 @@ GtkAssistant .sidebar {
         icon-shadow: none; }
   .button.destructive-action, .header-bar .destructive-action.button.titlebutton,
   .titlebar .destructive-action.button.titlebutton {
-    color: #212121;
+    color: #F7F7F7;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: #5e0707;
     background-image: linear-gradient(to bottom, #ed1212, #d51010 40%, #bd0e0e);
