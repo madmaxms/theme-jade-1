@@ -3045,8 +3045,10 @@ check,
 radio {
   min-height: 16px;
   min-width: 16px;
-  margin: -6px;
-  padding: 6px; 
+  margin-left: -6px;
+  margin-right: -6px;
+  padding-left: 6px;
+  padding-right: 6px; 
 }
 
 
