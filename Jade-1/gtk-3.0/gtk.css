@@ -345,7 +345,7 @@ GtkAssistant .sidebar {
     .button:backdrop:insensitive, .button.flat:backdrop:insensitive, .header-bar .titlebutton.button:backdrop:insensitive,
     .titlebar .titlebutton.button:backdrop:insensitive {
       border-color: #a9a9a9;
-      background-color: #626666;/*image(#323636);*/
+      background-color: #d6d6d6;/*image(#323636);*/
       text-shadow: 0 -1px rgba(255, 255, 255, 0.2);
       icon-shadow: 0 -1px rgba(255, 255, 255, 0.9);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.05); }

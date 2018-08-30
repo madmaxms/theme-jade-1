@@ -23,8 +23,12 @@ NemoWindow .sidebar .view,
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
     background-color: transparent;
     color: #ffffff; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected,
-    .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
+    .nemo-window .sidebar .view.cell:selected, 
+    .nemo-window .sidebar iconview.cell:selected, 
+    .nemo-window .sidebar row.cell:selected,
+    .nemo-window .sidebar .view.cell:selected:hover, 
+    .nemo-window .sidebar iconview.cell:selected:hover, 
+    .nemo-window .sidebar row.cell:selected:hover {
       background-color: #009966;
       color: #ffffff; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
@@ -85,7 +89,7 @@ NemoWindow .sidebar .view,
 NemoWindow .sidebar .view:selected {
     border-color: @nemo_sidebar_bg;
     color: @nemo_sidebar_selected_fg;
-    background-color: #009966;
+    background-color: #464a4b;
     text-shadow: 1px 1px alpha(black, 0.2);
     icon-shadow: 1px 1px alpha(black, 0.2);
 }
