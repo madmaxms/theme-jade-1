@@ -29,7 +29,7 @@ NemoWindow .sidebar .view,
     .nemo-window .sidebar .view.cell:selected:hover, 
     .nemo-window .sidebar iconview.cell:selected:hover, 
     .nemo-window .sidebar row.cell:selected:hover {
-      background-color: #009966;
+      background-color: #3a9e59;
       color: #ffffff; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: #464a4b;

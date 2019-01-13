@@ -26,6 +26,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ************************************************************************** */
+
 * { 
     transition-property: border-color, border-image, background-color, background-image, box-shadow; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -218,11 +219,13 @@ StScrollBar StButton#hhandle:active {
 	height:1em;
 	-slider-height:0.3em;
 	-slider-background-color:#000000;
-	-slider-border-color:rgba(100,120,130, 0.4);
+	-slider-border-color:rgba(100,100,100, 0.3);
 	-slider-active-background-color:#00db67; /* coloraccent */
 	-slider-active-border-color:transparent;
 	-slider-border-width:1px;
 	-slider-handle-radius:6px;
+    -barlevel-active-background-color: #00db67;/* coloraccent */
+    -barlevel-background-color:#000000;
 	border: 0px solid transparent;
 	border-right-width: 5px;
 	border-left-width: 5px;
@@ -688,7 +691,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-sub-menu { 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 -1px 0px #282c2c; 
 }
 
@@ -835,7 +838,7 @@ StScrollBar StButton#hhandle:active {
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer { 
     -arrow-border-radius: 6px; 
-    -arrow-background-color: rgba(21,25,28,0.91); 
+    -arrow-background-color: rgba(28,32,36,0.91); 
     -arrow-border-width: 0; 
     -arrow-border-color: transparent; 
     -arrow-base: 22px; 
@@ -862,11 +865,13 @@ StScrollBar StButton#hhandle:active {
 }
 
 .system-switch-user-submenu-icon.user-icon { 
-    icon-size: 20px; 
-    padding: 0 3.25px; 
+    icon-size: 48px; 
+    padding: 0px; 
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
-.system-switch-user-submenu-icon.default-icon { 
+.system-switch-user-submenu-icon .default-icon { 
     icon-size: 16px; 
     padding: 0 5.25px; 
 }
@@ -1034,11 +1039,12 @@ StScrollBar StButton#hhandle:active {
     background-color: rgba(150, 160, 170, 0.2); 
 }
 
+/* Workspace Switcher */
 .workspace-switcher { 
     padding: 0px; 
     spacing: 8px; 
     border: 0px; 
-    border-radius: 0px; 
+    border-radius: 5px; 
     background: transparent; 
 }
 
@@ -1669,7 +1675,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .message { 
-    background-color:rgba(0,0,0,0.4); 
+    background-color:rgba(0,0,0,0.3); 
     border:1px solid #506070;
     color: #BBCCDD;  
 }
@@ -2292,9 +2298,10 @@ StScrollBar StButton#hhandle:active {
 }
 
 .list-search-result { 
-    padding: 0px; 
     transition-duration: 0s;
     border-radius: 6px; 
+    margin: 0px;
+    padding: 0px;
 }
 
 .list-search-result:ltr { 
@@ -2356,7 +2363,7 @@ StScrollBar StButton#hhandle:active {
 
 .list-search-result-content { 
     spacing: 16px; 
-    padding: 16px; 
+    padding-left: 16px; 
     min-height: 32px; 
 }
 
@@ -3119,11 +3126,14 @@ StScrollBar StButton#hhandle:active {
     visible-width: 32px; 
     spacing: 12px; 
     margin-bottom: 32px; 
-    padding: 12px; 
-    border: none; 
-    border-radius: 0; 
+    padding: 16px; 
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; 
     background-color: rgba(19, 25, 28, 0.8); 
     color: #CCDDEE; 
+    box-shadow: none;
+    border-right: 0px;
+    box-shadow: none;
 }
 .workspace-thumbnail-indicator { 
     border: 2px solid #CCDDEE;
@@ -3140,16 +3150,6 @@ StScrollBar StButton#hhandle:active {
 .workspace-thumbnail-indicator:rtl { 
     padding: 6px 10px 6px 6px;
     margin: 0px 4px 0px 4px; 
-}
-
-.workspace-thumbnails, 
-.workspace-thumbnails-left:rtl { 
-    box-shadow: inset 1px 1px rgba(207, 216, 220, 0.2); 
-}
-
-.workspace-thumbnails:rtl, 
-.workspace-thumbnails-left { 
-    box-shadow: inset 1px 1px rgba(207, 216, 220, 0.2); 
 }
 
 .workspace-thumbnails:rtl .workspace-thumbnail-indicator, 
