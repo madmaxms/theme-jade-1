@@ -14,7 +14,7 @@
    viewBox="0 0 16 16"
    height="16"
    sodipodi:docname="checkboxUncheckedInsensitive.svg"
-   inkscape:version="0.92.2 2405546, 2018-03-11">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,7 +29,7 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="-1.0847458"
+     inkscape:cx="-15.457627"
      inkscape:cy="8"
      inkscape:window-x="0"
      inkscape:window-y="32"
@@ -49,15 +49,6 @@
   </metadata>
   <defs
      id="defs8" />
-  <rect
-     style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.15869713;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-     id="rect812"
-     width="14"
-     height="14"
-     x="1"
-     y="1"
-     rx="0"
-     ry="0" />
   <path
      style="fill:#797979;fill-opacity:1;stroke-width:0.8888889"
      id="path2"

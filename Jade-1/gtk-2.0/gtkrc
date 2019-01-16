@@ -151,6 +151,7 @@ style "default" {
       function  = CHECK
       recolorable = TRUE
       state = NORMAL
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -159,6 +160,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = PRELIGHT
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -167,6 +169,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = ACTIVE
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -175,6 +178,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = SELECTED
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -183,6 +187,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = INSENSITIVE
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked-insensitive.png"
       overlay_stretch = FALSE
     }
@@ -191,6 +196,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = NORMAL
+      shadow = IN
       overlay_file = "assets/checkbox-checked.png"
       overlay_stretch = FALSE
     }
@@ -199,6 +205,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = PRELIGHT
+      shadow = IN
       overlay_file = "assets/checkbox-checked.png"
       overlay_stretch = FALSE
     }
@@ -207,6 +214,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = ACTIVE
+      shadow = IN
       overlay_file = "assets/checkbox-checked.png"
       overlay_stretch = FALSE
     }
@@ -215,6 +223,7 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = SELECTED
+      shadow = IN
       overlay_file = "assets/checkbox-checked.png"
       overlay_stretch = FALSE
     }
@@ -223,15 +232,18 @@ style "default" {
       function = CHECK
       recolorable = TRUE
       state = INSENSITIVE
+      shadow = IN
       overlay_file = "assets/checkbox-checked-insensitive.png"
       overlay_stretch = FALSE
     }
 
     # Radio Buttons
 
+
     image {
       function = OPTION
       state = NORMAL
+      shadow = OUT
       overlay_file = "assets/radio-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -239,6 +251,7 @@ style "default" {
     image {
       function = OPTION
       state = PRELIGHT
+      shadow = OUT
       overlay_file = "assets/radio-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -246,6 +259,7 @@ style "default" {
     image {
       function = OPTION
       state = ACTIVE
+      shadow = OUT
       overlay_file = "assets/radio-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -253,6 +267,7 @@ style "default" {
     image {
       function = OPTION
       state = SELECTED
+      shadow = OUT
       overlay_file = "assets/radio-unchecked.png"
       overlay_stretch = FALSE
     }
@@ -260,6 +275,7 @@ style "default" {
     image {
       function = OPTION
       state = INSENSITIVE
+      shadow = OUT
       overlay_file = "assets/radio-unchecked-insensitive.png"
       overlay_stretch = FALSE
     }
@@ -267,6 +283,7 @@ style "default" {
     image {
       function = OPTION
       state = NORMAL
+      shadow = IN
       overlay_file = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
@@ -274,6 +291,7 @@ style "default" {
     image {
       function = OPTION
       state = PRELIGHT
+      shadow = IN
       overlay_file = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
@@ -281,6 +299,7 @@ style "default" {
     image {
       function = OPTION
       state = ACTIVE
+      shadow = IN
       overlay_file = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
@@ -288,6 +307,7 @@ style "default" {
     image {
       function = OPTION
       state = SELECTED
+      shadow = IN
       overlay_file = "assets/radio-checked.png"
       overlay_stretch = FALSE
     }
@@ -295,6 +315,7 @@ style "default" {
     image {
       function = OPTION
       state = INSENSITIVE
+      shadow = IN
       overlay_file = "assets/radio-checked-insensitive.png"
       overlay_stretch = FALSE
     }
