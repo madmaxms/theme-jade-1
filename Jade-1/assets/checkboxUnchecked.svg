@@ -13,7 +13,7 @@
    version="1.1"
    id="svg4"
    sodipodi:docname="checkboxUnchecked.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (unknown)"
    style="fill:#000000">
   <metadata
      id="metadata10">
@@ -42,9 +42,9 @@
      inkscape:window-height="1010"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="27.812867"
-     inkscape:cx="-9.6384052"
-     inkscape:cy="5.1057983"
+     inkscape:zoom="19.666667"
+     inkscape:cx="-20.118301"
+     inkscape:cy="2.5270378"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
@@ -52,7 +52,7 @@
   <path
      d="M 14,2 V 14 H 2 V 2 H 14 M 14.222222,0 H 1.7777778 C 0.8,0 0,0.8 0,1.7777778 V 14.222222 C 0,15.2 0.8,16 1.7777778,16 H 14.222222 C 15.2,16 16,15.2 16,14.222222 V 1.7777778 C 16,0.8 15.2,0 14.222222,0 Z"
      id="path2"
-     style="fill:#00c272;fill-opacity:1;stroke-width:0.8888889"
+     style="fill:#70a73a;fill-opacity:1;stroke-width:0.8888889"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cccccsssssssss" />
 </svg>

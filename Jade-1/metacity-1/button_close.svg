@@ -13,7 +13,7 @@
    height="19"
    width="19"
    sodipodi:docname="button_close.svg"
-   inkscape:version="0.92.2 2405546, 2018-03-11">
+   inkscape:version="0.92.4 (unknown)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,8 +28,8 @@
      id="namedview7"
      showgrid="false"
      inkscape:zoom="12.421053"
-     inkscape:cx="-1.2881356"
-     inkscape:cy="9.5"
+     inkscape:cx="-19.644068"
+     inkscape:cy="9.5000003"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
@@ -56,6 +56,6 @@
        cy="294.53009"
        cx="2.4699085"
        id="path815"
-       style="opacity:1;fill:#4bb45f;fill-opacity:1;stroke:#46d25a;stroke-width:0.35194132;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+       style="opacity:1;fill:#75b93c;fill-opacity:1;stroke:#81dc4b;stroke-width:0.35194132;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
   </g>
 </svg>

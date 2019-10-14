@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Jade-1
-Comment=Mixed light-dark gtk theme with green color accents developed for Linux Mint
+Name=Obsidian-Jade
+Comment=A Gnome theme, based upon Adwaita-Maia dark skin, modified by madmaxms
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Jade-1
-MetacityTheme=Jade-1
-IconTheme=Jade
-CursorTheme=Jade
+GtkTheme=Obsidian-Jade
+MetacityTheme=Obsidian-Jade
+IconTheme=Obsidian
+CursorTheme=Obsidian

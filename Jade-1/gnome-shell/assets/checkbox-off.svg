@@ -28,7 +28,7 @@
      transform="matrix(0.330728,0,0,0.330728,0,-92.9345)"
      id="layer1">
     <path
-       style="opacity:1;fill:#00c272;fill-opacity:1;stroke:none;stroke-width:0.36973873;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="opacity:1;fill:#008ef2;fill-opacity:1;stroke:none;stroke-width:0.36973873;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="M 2.3417969,0 C 1.0444651,0 0,1.0852485 0,2.4335938 V 13.566406 C 0,14.914751 1.0444651,16 2.3417969,16 H 13.658203 C 14.955536,16 16,14.914751 16,13.566406 V 2.4335938 C 16,1.0852485 14.955536,0 13.658203,0 Z M 2,2 H 14 V 14 H 2 Z"
        transform="matrix(1.0000035,0,0,1.0000035,0,280.99979)"
        id="rect815" />

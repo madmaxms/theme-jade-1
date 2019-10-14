@@ -32,7 +32,7 @@ gtk-color-scheme = "bg_color: #D6D6D6"
 gtk-color-scheme = "fg_color: #333333"
 gtk-color-scheme = "tooltip_bg_color: #000000"
 gtk-color-scheme = "tooltip_fg_color: #FFFFFF"
-gtk-color-scheme = "selected_bg_color: #3a9e59"
+gtk-color-scheme = "selected_bg_color: #5fa24a"
 gtk-color-scheme = "selected_fg_color: #FFFFFF"
 gtk-color-scheme = "insensitive_bg_color: #393F3F"
 gtk-color-scheme = "insensitive_fg_color: #a9acb2"
@@ -901,7 +901,7 @@ style "menu_item"
   # highlight. The price to pay is black text on menus as well,
   # but at least it's readable.
   # See https://bugs.freedesktop.org/show_bug.cgi?id=38038
-  bg[SELECTED] = @selected_bg_color
+  bg[SELECTED] = @selected_fg_color
 
   fg[NORMAL] = @selected_fg_color
   fg[SELECTED] = @selected_fg_color
@@ -947,6 +947,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = NORMAL
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked-menu.png"
       overlay_stretch = FALSE
     }
@@ -955,6 +956,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = PRELIGHT
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked-menu.png"
       overlay_stretch = FALSE
     }
@@ -963,6 +965,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = ACTIVE
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked-menu.png"
       overlay_stretch = FALSE
     }
@@ -971,6 +974,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = INSENSITIVE
+      shadow = OUT
       overlay_file = "assets/checkbox-unchecked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
@@ -979,6 +983,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = NORMAL
+      shadow = IN
       overlay_file = "assets/checkbox-checked-menu.png"
       overlay_stretch = FALSE
     }
@@ -987,6 +992,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = PRELIGHT
+      shadow = IN
       overlay_file = "assets/checkbox-checked-menu.png"
       overlay_stretch = FALSE
     }
@@ -995,6 +1001,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = ACTIVE
+      shadow = IN
       overlay_file = "assets/checkbox-checked-menu.png"
       overlay_stretch = FALSE
     }
@@ -1003,6 +1010,7 @@ style "menu_item"
       function = CHECK
       recolorable = TRUE
       state = INSENSITIVE
+      shadow = IN
       overlay_file = "assets/checkbox-checked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
@@ -1012,56 +1020,64 @@ style "menu_item"
     image {
       function = OPTION
       state = NORMAL
-      overlay_file = "assets/radio-unchecked.png"
+      shadow = OUT
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
     image {
       function = OPTION
       state = PRELIGHT
-      overlay_file = "assets/radio-unchecked-selected.png"
+      shadow = OUT
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
     image {
       function = OPTION
       state = ACTIVE
-      overlay_file = "assets/radio-unchecked.png"
+      shadow = OUT
+      overlay_file = "assets/radio-unchecked-menu.png"
       overlay_stretch = FALSE
     }
 
     image {
       function = OPTION
       state = INSENSITIVE
-      overlay_file = "assets/radio-unchecked-insensitive.png"
+      shadow = OUT
+      overlay_file = "assets/radio-unchecked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
     image {
       function = OPTION
       state = NORMAL
-      overlay_file = "assets/radio-checked.png"
+      shadow = IN
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
     image {
       function = OPTION
       state = PRELIGHT
-      overlay_file = "assets/radio-checked-selected.png"
+      shadow = IN
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
     image {
       function = OPTION
       state = ACTIVE
-      overlay_file = "assets/radio-checked.png"
+      shadow = IN
+      overlay_file = "assets/radio-checked-menu.png"
       overlay_stretch = FALSE
     }
 
     image {
       function = OPTION
       state = INSENSITIVE
-      overlay_file = "assets/radio-checked-insensitive.png"
+      shadow = IN
+      overlay_file = "assets/radio-checked-insensitive-menu.png"
       overlay_stretch = FALSE
     }
 
