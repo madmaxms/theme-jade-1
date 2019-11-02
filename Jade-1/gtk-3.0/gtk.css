@@ -1,18 +1,4 @@
 /* *************************************************************************************************
-                           O B S I D I A N  2
-              
-                            v2.8 (15.11.2018)
-                                
-                                 BLUE
-
- ---------------------------------------------------------------------------------------------------
- A dark gray theme with blue accents, created by MadMaxMS, based 
- upon Adwaita-Maia. 
- 
- Code available at Github:
- https://github.com/madmaxms/theme-obsidian-2
- 
- ---------------------------------------------------------------------------------------------------
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -846,6 +832,7 @@ button:backdrop.flat,
 button:backdrop label,
 button:backdrop {
     color: @theme_fg_color_dis;
+    box-shadow: 0 1px 1px alpha(white, 0.0);
 }/*
 notebook > header > tabs > arrow:backdrop:active,
 button.sidebar-button:backdrop:active,
@@ -908,11 +895,11 @@ button:backdrop.flat:disabled,
 button:backdrop:disabled,
 .button:backdrop:insensitive,
 .button.flat:backdrop:insensitive {
-    border-color: @unfocused_borders;
-    background-color: @insensitive_bg_color;
+    border-color: transparent;
+    background-color: transparent;
     text-shadow: none;
     -gtk-icon-shadow: none;
-    /*box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);*/
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.0);
     color: @button_fg_dis;
 }
 headerbar button:backdrop:disabled,
@@ -1133,10 +1120,6 @@ row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
 row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled):backdrop,
 row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
     color: @theme_fg_color_dis;
-}
-button.titlebutton:disabled,
-button:disabled {
-    box-shadow: 0 1px 1px alpha(white, 0.1);
 }
 button.osd,
 .button.osd,
@@ -2780,12 +2763,14 @@ modelbutton.flat,
     padding-right: 5px;
     border-radius: 3px;
     outline-offset: -2px;
+    box-shadow: none;
 }
 modelbutton.flat:hover,
 .menuitem.button.flat:hover,
 .header-bar .menuitem.titlebutton.button:hover,
 .titlebar .menuitem.titlebutton.button:hover {
     background-color: @headermenu_bg_hover;
+    box-shadow: none;
 }
 
 modelbutton.flat arrow {
@@ -5925,71 +5910,87 @@ GtkSwitch.slider
 switch,
 menuitem:hover switch,
 row:selected switch,
-infobar switch,
-headerbar switch,
-.primary-toolbar switch
+infobar switch
 {
     background-image: -gtk-scaled(url("../assets/switch-off.svg"));
 }
-
+headerbar switch,
+.primary-toolbar switch
+{
+    background-image: -gtk-scaled(url("../assets/header-switch-off.svg"));
+}
 switch:hover,
 menuitem:hover switch:hover,
 row:selected switch:hover,
 infobar switch:hover,
-headerbar switch:hover,
-.primary-toolbar switch:hover,
 switch:active,
 menuitem:hover switch:active,
 row:selected switch:active,
-infobar switch:active,
+infobar switch:active
+{
+    background-image: -gtk-scaled(url("../assets/switch-off-hover.svg"));
+}
+headerbar switch:hover,
+.primary-toolbar switch:hover,
 headerbar switch:active,
 .primary-toolbar switch:active
 {
-    background-image: -gtk-scaled(url("../assets/switch-off-hover.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-off-hover.svg"));
 }
 switch:checked,
 menuitem:hover switch:checked,
 row:selected switch:checked,
-infobar switch:checked,
+infobar switch:checked
+{
+    background-image: -gtk-scaled(url("../assets/switch-on.svg"));
+}
 headerbar switch:checked,
 .primary-toolbar switch:checked
 {
-    background-image: -gtk-scaled(url("../assets/switch-on.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-on.svg"));
 }
 switch:checked:hover,
 menuitem:hover switch:checked:hover,
 row:selected switch:checked:hover,
 infobar switch:checked:hover,
-headerbar switch:checked:hover,
-.primary-toolbar switch:checked:hover,
 switch:checked:active,
 menuitem:hover switch:checked:active,
 row:selected switch:checked:active,
-infobar switch:checked:active,
-headerbar switch:checked:active,
-.primary-toolbar switch:checked:active
+infobar switch:checked:active
 {
     background-image: -gtk-scaled(url("../assets/switch-on-hover.svg"));
 }
-
+headerbar switch:checked:hover,
+.primary-toolbar switch:checked:hover,
+headerbar switch:checked:active,
+.primary-toolbar switch:checked:active
+{
+    background-image: -gtk-scaled(url("../assets/header-switch-on-hover.svg"));
+}
 switch:disabled,
 menuitem:hover switch:disabled,
 row:selected switch:disabled,
-infobar switch:disabled,
+infobar switch:disabled
+{
+  background-image: -gtk-scaled(url("../assets/switch-off-disabled.svg"));
+}
 headerbar switch:disabled,
 .primary-toolbar switch:disabled
 {
-  background-image: -gtk-scaled(url("../assets/switch-off-disabled.svg"));
+  background-image: -gtk-scaled(url("../assets/header-switch-off-disabled.svg"));
 }
 
 switch:checked:disabled,
 menuitem:hover switch:checked:disabled,
 row:selected switch:checked:disabled,
-infobar switch:checked:disabled,
+infobar switch:checked:disabled
+{
+    background-image: -gtk-scaled(url("../assets/switch-on-disabled.svg"));
+}
 headerbar switch:checked:disabled,
 .primary-toolbar switch:checked:disabled
 {
-    background-image: -gtk-scaled(url("../assets/switch-on-disabled.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-on-disabled.svg"));
 }
 
 GtkSwitch.trough:dir(rtl), GtkSwitch.slider:dir(rtl) {
@@ -6009,7 +6010,7 @@ GtkInfoBar GtkSwitch.trough {
 .primary-toolbar GtkSwitch.trough,
 .primary-toolbar .toolbar GtkSwitch.trough,
 .primary-toolbar .inline-toolbar GtkSwitch.trough {
-    background-image: -gtk-scaled(url("../assets/switch-off.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-off.svg"));
 }
 
 GtkSwitch.trough:hover {
@@ -6024,7 +6025,7 @@ GtkInfoBar GtkSwitch.trough:hover {
 .primary-toolbar GtkSwitch.trough:hover,
 .primary-toolbar .toolbar GtkSwitch.trough:hover,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:hover {
-    background-image: -gtk-scaled(url("../assets/switch-off-hover.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-off-hover.svg"));
 }
 
 GtkSwitch.trough:active {
@@ -6040,7 +6041,7 @@ GtkInfoBar GtkSwitch.trough:active {
 .primary-toolbar GtkSwitch.trough:active,
 .primary-toolbar .toolbar GtkSwitch.trough:active,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:active {
-    background-image: -gtk-scaled(url("../assets/switch-on.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-on.svg"));
 }
 
 GtkSwitch.trough:active:hover {
@@ -6056,7 +6057,7 @@ GtkInfoBar GtkSwitch.trough:active:hover {
 .primary-toolbar GtkSwitch.trough:active:hover,
 .primary-toolbar .toolbar GtkSwitch.trough:active:hover,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:active:hover {
-    background-image: -gtk-scaled(url("../assets/switch-on-hover.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-on-hover.svg"));
 }
 
 GtkSwitch.trough:insensitive {
@@ -6072,7 +6073,7 @@ GtkInfoBar GtkSwitch.trough:insensitive {
 .primary-toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:insensitive {
-    background-image: -gtk-scaled(url("../assets/switch-off-disabled.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-off-disabled.svg"));
 }
 
 GtkSwitch.trough:active:insensitive {
@@ -6088,7 +6089,7 @@ GtkInfoBar GtkSwitch.trough:active:insensitive {
 .primary-toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar .inline-toolbar GtkSwitch.trough:active:insensitive {
-    background-image: -gtk-scaled(url("../assets/switch-on-disabled.svg"));
+    background-image: -gtk-scaled(url("../assets/header-switch-on-disabled.svg"));
 }
 
 
@@ -8392,9 +8393,6 @@ filechooserbutton:drop(active) {
     color: @sidebar_fg;
 }
 
-.view:hover {
-    box-shadow: inset 0 0 0 9999px alpha(@sidebar_hovering, 0.3);
-}
 .sidebar row,
 .sidebar .frame {
     background-color: @sidebar_bg;
@@ -8402,6 +8400,8 @@ filechooserbutton:drop(active) {
 
 row.activatable:hover {
     box-shadow: inset 0 0 0 9999px alpha(@sidebar_hovering, 0.2);
+    background-color: transparent;
+    background-image: none;
 }
 
 .sidebar list,
@@ -8629,9 +8629,9 @@ stacksidebar row.needs-attention > label {
     background-size: 6px 6px, 0 0;
 }
 
-.sidebar .view:hover:not(:selected),
+.view:hover:not(:selected),
 .budgie-menu button:hover  {
-  box-shadow: inset 0 0 0 9999px alpha(@sidebar_hovering, 0.3);
+  box-shadow: inset 0 0 0 9999px alpha(@sidebar_hovering, 0.2);
 }
 
 /***************************************************************************************************
@@ -8948,7 +8948,7 @@ infobar.warning button:disabled label,
 infobar.warning button:disabled,
 infobar.error button:disabled label,
 infobar.error button:disabled {
-    color: @theme_fg_color_sel;
+    color: @infobar_button_fg_dis;
 }
 infobar.info button label,
 infobar.info button,
@@ -8994,7 +8994,7 @@ infobar.warning button:backdrop label,
 infobar.warning button:backdrop,
 infobar.error button:backdrop label,
 infobar.error button:backdrop {
-    color: @theme_fg_color_sel;
+    color: @infobar_button_fg_dis;
 }
 .info .button:backdrop:insensitive,
 .question .button:backdrop:insensitive,
@@ -9029,7 +9029,7 @@ infobar.warning button:backdrop:disabled label,
 infobar.warning button:backdrop:disabled,
 infobar.error button:backdrop:disabled label,
 infobar.error button:backdrop:disabled {
-    color: @theme_fg_color_sel;
+    color: @infobar_button_fg_dis;
 }
 .info .label:selected,
 .info .label:selected:focus,
@@ -10053,7 +10053,7 @@ NemoWindow .sidebar .view {
 .nemo-window .sidebar iconview.cell:hover,
 .nemo-window .sidebar row.cell:hover {
     background-color: transparent;
-    box-shadow: inset 0 0 0 9999px alpha(@sidebar_hovering, 0.3);
+    box-shadow: inset 0 0 0 9999px alpha(@sidebar_hovering, 0.2);
     color: @sidebar_fg;
 }
 .nemo-window .sidebar .view.expander,
@@ -10286,4 +10286,28 @@ PanelApplet.wnck-applet .wnck-pager:hover {
 .ubiquity-menubar {
     background-color: @view_bg;
     color: @theme_fg_color;
+}
+
+.xfce4-panel.panel {
+    background-color: #414747;
+    color: #DADADA; 
+}
+.xfce4-panel.panel button.flat, 
+.xfce4-panel.panel button.sidebar-button {
+    color: #DADADA;
+    border-radius: 0;
+    border: none; 
+}
+.xfce4-panel.panel button.flat:hover, 
+.xfce4-panel.panel button.sidebar-button:hover {
+      border: none;
+      background-color: #4e4e4e; 
+}
+.xfce4-panel.panel button.flat:active, 
+.xfce4-panel.panel button.sidebar-button:active, 
+.xfce4-panel.panel button.flat:checked, 
+.xfce4-panel.panel button.sidebar-button:checked {
+      color: #ffffff;
+      border: none;
+      background-color: #92b372; 
 }

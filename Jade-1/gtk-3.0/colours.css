@@ -65,11 +65,12 @@
 
 /* infobar */
 @define-color    infobar_bg_a                          #6eb35d;
-@define-color    infobar_bg_b                          #62aa48;
+@define-color    infobar_bg_b                          #589941;
 @define-color    infobar_border                        #3b7014;
 @define-color    infobar_button_fg                     #f7f7f7;
+@define-color    infobar_button_fg_dis                 #7dcd6a;
 @define-color    infobar_button_bg_a                   #6eb35d;
-@define-color    infobar_button_bg_b                   #62aa48;
+@define-color    infobar_button_bg_b                   #589941;
 @define-color    infobar_button_bg_act_a               #3d7c01;
 @define-color    infobar_button_bg_act_b               #50a411;
 @define-color    infobar_button_border                 #3b7014;
@@ -80,7 +81,7 @@
 /* ****************************** C O M M O N   C O L O U R S *********************************** */
 
 /* text widgets and the like base background color */
-@define-color    theme_base_color                      #d6d6d6;
+@define-color    theme_base_color                      #c5c5c5;
 
 
 /* widget background color */
@@ -111,7 +112,7 @@
 @define-color    view_fg_dis                           #566164;
 @define-color    view_fg_hov                           #212121;
 @define-color    view_border                           #969696;
-@define-color    view_hdr_border                       #d6d6d6;
+@define-color    view_hdr_border                       #c5c5c5;
 
 @define-color    tooltip_fg                            #f7f7f7;
 
@@ -164,15 +165,15 @@
 @define-color    button_fg_osd_dis                     #666666;
 @define-color    button_fg_shadow                      @shadow_color;
 @define-color    button_fg_dis                         #363636;
-@define-color    button_bg_a                           #eeeeee;
-@define-color    button_bg_b                           #d0d0d0;
-@define-color    button_bg_c                           #bebebe;
+@define-color    button_bg_a                           #ececec;
+@define-color    button_bg_b                           #d8d8d8;
+@define-color    button_bg_c                           #cecece;
 @define-color    button_bg_a_hov                       #4b5454;
 @define-color    button_bg_b_hov                       #333a3a;
 @define-color    button_bg_c_hov                       #292f2f;
-@define-color    button_bg_a_act                       #989898;
-@define-color    button_bg_b_act                       #ababab;
-@define-color    button_bg_c_act                       #bababa;
+@define-color    button_bg_a_act                       #8f8f8f;
+@define-color    button_bg_b_act                       #a1a1a1;
+@define-color    button_bg_c_act                       #aaaaaa;
 @define-color    button_bg_a_dis                       #232628;
 @define-color    button_bg_a_bkdrp                     #232628;
 @define-color    button_border                         #a9a9a9;
@@ -212,16 +213,16 @@
 @define-color    button_bg_dis_a                       #DCDCDC;
 @define-color    button_bg_dis_b                       #e9e9e9;
 
-@define-color    button_bgcirc_a_hov                   #353c3e;
-@define-color    button_bgcirc_b_hov                   #444444;
-@define-color    button_bgcirc_c_hov                   #2a2e30;
+@define-color    button_bgcirc_a_hov                   #f6f6f6;
+@define-color    button_bgcirc_b_hov                   #d8d8d8;
+@define-color    button_bgcirc_c_hov                   #cecece;
 
 @define-color    button_fgcirc_shadow                  @shadow_color;
-@define-color    button_bgcirc_a                       #444444;
-@define-color    button_bgcirc_b                       #2a2e30;
-@define-color    button_bgcirc_c                       #25292b;
-@define-color    button_bgcirc_flt_a                   #0b0c0c;
-@define-color    button_bgcirc_flt_b                   #1b1f20;
+@define-color    button_bgcirc_a                       #ececec;
+@define-color    button_bgcirc_b                       #d8d8d8;
+@define-color    button_bgcirc_c                       #cecece;
+@define-color    button_bgcirc_flt_a                   #969696;
+@define-color    button_bgcirc_flt_b                   #969696;
 
 /* menus and menubars */
 @define-color    menu_bg                               #414747;
@@ -234,7 +235,7 @@
 @define-color    menuitem_bg_hover                     @theme_accent_color;
 @define-color    menuitem_fg_dis                       #6f6f6f;
 @define-color    menuitem_separator                    #1b1f20;
-@define-color    headermenu_bg_hover                   #c0c0c0;
+@define-color    headermenu_bg_hover                   #aab1b3;
 
 /* scale */
 @define-color    scale_trough_b                        @theme_bg_color;
@@ -274,13 +275,13 @@
 @define-color    insensitive_fg_color                  #616464;
 
 /* insensitive text widgets and the like base background color */
-@define-color    insensitive_base_color                #d6d6d6;
+@define-color    insensitive_base_color                #c5c5c5;
 
 /* text color for entries, views and content in general on backdrop windows */
 @define-color    theme_unfocused_text_color            #ffffff;
 
 /* widget base background color on backdrop windows */
-@define-color    theme_unfocused_bg_color              #d6d6d6;
+@define-color    theme_unfocused_bg_color              #c5c5c5;
 
 /* text widgets and the like base background color on backdrop windows */
 @define-color    theme_unfocused_base_color            #f7f7f7;

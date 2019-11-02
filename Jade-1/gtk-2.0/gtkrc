@@ -28,7 +28,7 @@
 # *************************************************************************
 gtk-color-scheme = "base_color: #ffffff"
 gtk-color-scheme = "text_color: #333333"
-gtk-color-scheme = "bg_color: #D6D6D6"
+gtk-color-scheme = "bg_color: #c5c5c5"
 gtk-color-scheme = "fg_color: #333333"
 gtk-color-scheme = "tooltip_bg_color: #000000"
 gtk-color-scheme = "tooltip_fg_color: #FFFFFF"
@@ -37,8 +37,9 @@ gtk-color-scheme = "selected_fg_color: #FFFFFF"
 gtk-color-scheme = "insensitive_bg_color: #393F3F"
 gtk-color-scheme = "insensitive_fg_color: #a9acb2"
 gtk-color-scheme = "notebook_bg: #d6d6d6"
-gtk-color-scheme = "dark_sidebar_bg: #353945"
+gtk-color-scheme = "dark_sidebar_bg: #3e4243"
 gtk-color-scheme = "link_color: #5294e2"
+gtk-color-scheme = "menu_fg: #f7f7f7"
 gtk-color-scheme = "menu_bg: #414747"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
@@ -621,12 +622,12 @@ style "menubar_item" {
   fg[PRELIGHT] = "#ffffff"
   fg[ACTIVE] = "#ffffff"
   fg[SELECTED] = "#ffffff"
-  fg[INSENSITIVE] = shade(0.7, "#ff0000")
+  fg[INSENSITIVE] = shade(0.7, "#999999")
   text[NORMAL] = "#ffffff"
   text[PRELIGHT] = "#ffffff"
   text[ACTIVE] = "#ffffff"
   text[SELECTED] = "#ffffff"
-  text[INSENSITIVE] = shade(0.7, "#000000")
+  text[INSENSITIVE] = shade(0.7, "#999999")
 
   engine "pixmap" {
 
@@ -647,12 +648,12 @@ style "menubar_text" {
   fg[PRELIGHT] = "#ffffff"
   fg[ACTIVE] = "#ffffff"
   fg[SELECTED] = "#ffffff"
-  fg[INSENSITIVE] = shade(0.7, "#000000")
+  fg[INSENSITIVE] = shade(0.7, "#999999")
   text[NORMAL] = "#ffffff"
   text[PRELIGHT] = "#ffffff"
   text[ACTIVE] = "#ffffff"
   text[SELECTED] = "#ffffff"
-  text[INSENSITIVE] = shade(0.7, "#000000")
+  text[INSENSITIVE] = shade(0.7, "#999999")
 
   engine "murrine" {
     text_shade = 1.0
@@ -705,9 +706,11 @@ style "murrine-nogap" {
 
 # Menu
 style "murrine-menu" = "murrine-nogap" {
- bg[NORMAL] = "#414747" # menu background
- fg[PRELIGHT] = "#FFFFFF"
- text[ACTIVE] = "#FFFFFF"
+ bg[NORMAL] = @menu_bg # menu background
+ fg[NORMAL] = @menu_fg
+ fg[PRELIGHT] = @menu_fg
+ text[ACTIVE] = @menu_fg
+ text[NORMAL] = @menu_fg
  GtkMenuItem::arrow-scaling = .5 # small arrow
 
   engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
@@ -867,9 +870,11 @@ style "menu" {
   GtkMenuItem::arrow-scaling = 0.4
 
   bg[NORMAL] = @menu_bg
-  fg[NORMAL] = @selected_fg_color
+  fg[NORMAL] = @menu_fg
   bg[INSENSITIVE] = @menu_bg
+  fg[INSENSITIVE] = @menu_fg
   bg[PRELIGHT] = @menu_bg
+  fg[PRELIGHT] = @menu_fg
 
   engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
 
@@ -901,7 +906,7 @@ style "menu_item"
   # highlight. The price to pay is black text on menus as well,
   # but at least it's readable.
   # See https://bugs.freedesktop.org/show_bug.cgi?id=38038
-  bg[SELECTED] = @selected_fg_color
+  bg[SELECTED] = @selected_bg_color
 
   fg[NORMAL] = @selected_fg_color
   fg[SELECTED] = @selected_fg_color
@@ -1258,6 +1263,9 @@ style "combobox_entry"
   xthickness = 3
   ythickness = 4
 
+  fg[NORMAL] = @menu_fg
+  bg[NORMAL] = @menu_bg
+
   engine "pixmap" {
 
     # LTR version
@@ -1408,7 +1416,8 @@ style "combobox_entry_button"
 {
   xthickness = 6
 
-  fg[ACTIVE] = @text_color
+  fg[NORMAL] = @menu_fg
+  fg[ACTIVE] = @menu_fg
 
   engine "pixmap" {
 
@@ -1959,6 +1968,9 @@ style "combobox_button" {
 
   xthickness = 3
   ythickness = 3
+
+  fg[NORMAL] = @menu_fg
+  bg[NORMAL] = @menu_bg
 
 }
 
