@@ -712,6 +712,19 @@ headerbar button.flat,
     transition: none; 
     color: @header_fg_color;
 }
+headerbar button.flat:backdrop,
+.header-bar .titlebutton.button.flat:backdrop,
+.titlebar .titlebutton.button.flat:backdrop {
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 4px;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    transition: none; 
+    color: @header_fg_color;
+}
 headerbar button.flat label {
     color: @header_fg_color;
 }
