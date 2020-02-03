@@ -825,7 +825,7 @@ button.titlebutton:checked,
 headerbar button:backdrop,
 .header-bar .button.titlebutton:backdrop,
 .titlebar .button.titlebutton:backdrop {
-    border: 1px solid @titlebutton_border;
+    /*border: 1px solid @titlebutton_border;*/
     border-radius: 3px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     color: @titlebutton_fg_dis;
@@ -1538,10 +1538,6 @@ button.suggested-action.flat:backdrop,
 .header-bar .suggested-action.titlebutton.button:backdrop,
 .titlebar .suggested-action.titlebutton.button:backdrop {
     border-color: @button_border_sugg;
-    background-image: image(@button_bg_sugg_flt);
-    /*text-shadow: none;
-    -gtk-icon-shadow: none;
-    /*box-shadow: inset 0 1px rgba(255, 255, 255, 0);*/
     color: @button_fg_sugg_color;
 }
 
