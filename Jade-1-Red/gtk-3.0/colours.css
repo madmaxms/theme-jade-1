@@ -200,12 +200,12 @@
 @define-color    button_fg_sugg_shadow                 @shadow_color;
 
 @define-color    button_fg_dest_color                  #f7f7f7;
-@define-color    button_bg_dest_a                      #cc0f0f;
+@define-color    button_bg_dest_a                      #d43724;
 @define-color    button_bg_dest_b                      #c20f0f;
 @define-color    button_bg_dest_c                      #b60a0a;
-@define-color    button_bg_dest_a_hov                  #da1010;
+@define-color    button_bg_dest_a_hov                  #ed422c;
 @define-color    button_bg_dest_b_hov                  #cc0f0f;
-@define-color    button_bg_dest_c_hov                  #c00c0c;
+@define-color    button_bg_dest_c_hov                  #b60a0a;
 @define-color    button_bg_dest_a_act                  #b90e0e;
 @define-color    button_bg_dest_b_act                  #b90e0e;
 @define-color    button_bg_dest_c_act                  #b90e0e;

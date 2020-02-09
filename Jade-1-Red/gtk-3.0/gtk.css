@@ -381,7 +381,6 @@ headerbar entry:disabled {
     color: @theme_fg_color_dis;
     border-color: @titleentry_border_dis;
     background-color: @insensitive_bg_color;
-    box-shadow: none;
 }
 .entry:insensitive,
 spinbutton:disabled:not(.vertical),
@@ -389,7 +388,6 @@ entry:disabled {
     color: @theme_fg_color_dis;
     border-color: @entry_border_dis;
     /*background-color: @insensitive_bg_color;*/
-    box-shadow: none;
 }
 
 .entry:backdrop,
@@ -397,8 +395,6 @@ spinbutton:backdrop:not(.vertical),
 entry:backdrop {
     color: @entry_fg_dis;
     border-color: @entry_border_dis;
-    /*background-color: @view_bg;*/
-    box-shadow: none;
     transition: 200ms ease-out;
 }
 .header-bar .entry:backdrop,
@@ -407,8 +403,6 @@ headerbar spinbutton:backdrop:not(.vertical),
 headerbar entry:backdrop {
     color: @titleentry_fg_dis;
     border-color: @titleentry_border_dis;
-    background-color: @view_bg;
-    box-shadow: none;
     transition: 200ms ease-out;
 }
 .entry:backdrop:insensitive,
@@ -417,7 +411,14 @@ entry:backdrop:disabled {
     color: @entry_fg_dis;
     border-color: @entry_border_dis;
     background-color: @insensitive_bg_color;
-    box-shadow: none;
+}
+.header-bar .entry:backdrop:insensitive,
+.titlebar .entry:backdrop:insensitive,
+headerbar spinbutton:backdrop:disabled:not(.vertical),
+headerbar entry:backdrop:disabled {
+    color: @titleentry_fg_dis;
+    border-color: @titleentry_border_dis;
+    background-color: @insensitive_bg_color;
 }
 spinbutton.error:not(.vertical),
 entry.error,
