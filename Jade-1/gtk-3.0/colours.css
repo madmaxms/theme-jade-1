@@ -7,7 +7,7 @@
 
 /* ****************************** A C C E N T   C O L O U R S *********************************** */
 
-@define-color    theme_accent_color                    #5fa24a;
+@define-color    theme_accent_color                    #6aa44e;
 
 @define-color    theme_selected_bg_color               @theme_accent_color;
 @define-color    theme_selected_fg_color               #ffffff;
@@ -26,21 +26,21 @@
 @define-color    view_bg_acceleditor                   #6f9f10;
 
 /* entry */
-@define-color    entry_border_act                      #449900;
-@define-color    entry_border_act_shad                 #69C000;
-@define-color    entry_tag_a                           #5cb900;
-@define-color    entry_tag_b                           #57b600;
-@define-color    entry_tag_c                           #55b300;
-@define-color    entry_tag_border                      #339900;
+@define-color    entry_border_act                      #5f993b;
+@define-color    entry_border_act_shad                 #6ca234;
+@define-color    entry_tag_a                           #589d34;
+@define-color    entry_tag_b                           #4d9329;
+@define-color    entry_tag_c                           #42891e;
+@define-color    entry_tag_border                      #2c7401;
 
 /* buttons */
 @define-color    button_fg_sugg_color                  #f7f7f7;
-@define-color    button_bg_sugg_a                      #52a33f;
-@define-color    button_bg_sugg_b                      #4f9636;
-@define-color    button_bg_sugg_c                      #488c2e;
+@define-color    button_bg_sugg_a                      #5fa33f;
+@define-color    button_bg_sugg_b                      #4f9330;
+@define-color    button_bg_sugg_c                      #478b28;
 @define-color    button_bg_sugg_a_hov                  #62b34f;
 @define-color    button_bg_sugg_b_hov                  #5fa646;
-@define-color    button_bg_sugg_c_hov                  #589c3e;
+@define-color    button_bg_sugg_c_hov                  #478b28;
 @define-color    button_bg_sugg_a_act                  #3d7c01;
 @define-color    button_bg_sugg_b_act                  #478d04;
 @define-color    button_bg_sugg_c_act                  #50a411;
@@ -143,7 +143,7 @@
 @define-color    titleentry_bg_under_b                 #000000;
 @define-color    titleentry_bg_shadow                  @shadow_color;
 @define-color    titleentry_border                     #0a0a0a;
-@define-color    titleentry_border_dis                 #202425;
+@define-color    titleentry_border_dis                 #0a0a0a;
 
 @define-color    entry_border_err                      #ff7f7f;
 @define-color    entry_bg_err_a                        #ed4848;
@@ -200,12 +200,12 @@
 @define-color    button_fg_sugg_shadow                 @shadow_color;
 
 @define-color    button_fg_dest_color                  #f7f7f7;
-@define-color    button_bg_dest_a                      #cc0f0f;
+@define-color    button_bg_dest_a                      #d43724;
 @define-color    button_bg_dest_b                      #c20f0f;
 @define-color    button_bg_dest_c                      #b60a0a;
-@define-color    button_bg_dest_a_hov                  #da1010;
+@define-color    button_bg_dest_a_hov                  #ed422c;
 @define-color    button_bg_dest_b_hov                  #cc0f0f;
-@define-color    button_bg_dest_c_hov                  #c00c0c;
+@define-color    button_bg_dest_c_hov                  #b60a0a;
 @define-color    button_bg_dest_a_act                  #b90e0e;
 @define-color    button_bg_dest_b_act                  #b90e0e;
 @define-color    button_bg_dest_c_act                  #b90e0e;
