@@ -548,7 +548,12 @@ entry progress {
 spinbutton:not(.vertical) progress:backdrop,
 entry progress:backdrop {
     background-color: transparent;
+    background-image: none;
 }
+entry progressbar trough {
+    background-image: none;
+}
+
 .linked:not(.vertical) > spinbutton:focus:not(.vertical) + spinbutton:not(.vertical),
 .linked:not(.vertical) > spinbutton:focus:not(.vertical) + button,
 .linked:not(.vertical) > spinbutton:focus:not(.vertical) + combobox > box > button.combo,
@@ -3562,7 +3567,6 @@ EggListBox.content-view:active,
  **************************************************************************************************/
 .inline-toolbar,
 searchbar,
-toolbar,
 .toolbar,
 .location-bar,
 .search-bar,
@@ -3576,6 +3580,7 @@ toolbar,
 .primary-toolbar {
     border-bottom: 1px solid @border_box;
     border-top: 1px solid @border_box;
+    background-color: @theme_base_color;
 }
 
 toolbar {
