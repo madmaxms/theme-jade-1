@@ -91,7 +91,7 @@
 @define-color    theme_bg_color_hov                    #b0b0b0;
 @define-color    theme_bg_color_from                   #454c4c;
 @define-color    theme_bg_color_to                     #2d3232;
-
+@define-color    popover                               @theme_bg_color;
 @define-color    shadow_color                          #cccccc;
 
 /* widget text/foreground color */
@@ -108,7 +108,7 @@
 @define-color    assistant_sidebar_fg                  #ffffff;
 
 /* view */
-@define-color    view_bg                               #f7f7f7;
+@define-color    view_bg                               #f3f3f3;
 @define-color    view_bg_hover                         #e0e0e0;
 @define-color    view_fg                               #212121;
 @define-color    view_fg_dis                           #566164;
