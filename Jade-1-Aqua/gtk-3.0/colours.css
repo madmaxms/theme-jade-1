@@ -14,7 +14,7 @@
 @define-color    theme_unfocused_selected_bg_color     @theme_accent_color;
 
 /* sidebar colours */
-@define-color    sidebar_bg                            #3e4243;
+@define-color    sidebar_bg                            #384147;
 @define-color    sidebar_hovering                      #999999;
 @define-color    sidebar_fg                            #ffffff;
 
@@ -91,7 +91,7 @@
 @define-color    theme_bg_color_hov                    #b0b0b0;
 @define-color    theme_bg_color_from                   #454c4c;
 @define-color    theme_bg_color_to                     #2d3232;
-
+@define-color    popover                               @theme_bg_color;
 @define-color    shadow_color                          #cccccc;
 
 /* widget text/foreground color */
@@ -108,7 +108,7 @@
 @define-color    assistant_sidebar_fg                  #ffffff;
 
 /* view */
-@define-color    view_bg                               #f7f7f7;
+@define-color    view_bg                               #f3f3f3;
 @define-color    view_bg_hover                         #e0e0e0;
 @define-color    view_fg                               #212121;
 @define-color    view_fg_dis                           #566164;
@@ -155,10 +155,10 @@
 /* header bars */
 @define-color    header_fg_color                       #eeeeec;
 @define-color    header_fg_color_sub                   #cccccc;
-@define-color    header_bg_a                           #4b5252;
-@define-color    header_bg_b                           #414747;
+@define-color    header_bg_a                           #414b51;
+@define-color    header_bg_b                           #384248;
 @define-color    pathbar_bg                            @theme_base_color;
-@define-color    titlepathbar_bg                       #414747;
+@define-color    titlepathbar_bg                       #384248;
 @define-color    pathbar_bdr                           #444444;
 @define-color    pathbar_bdr_sub                       #222222;
 
@@ -183,18 +183,18 @@
 
 @define-color    titlebutton_fg_color                  #ffffff;
 @define-color    titlebutton_fg_shadow                 #000000;
-@define-color    titlebutton_fg_dis                    #909090;
+@define-color    titlebutton_fg_dis                    #566164;
 @define-color    titlebutton_flat_bg                   #5b6464;
-@define-color    titlebutton_bg_a                      #303636;
-@define-color    titlebutton_bg_b                      #2b2f30;
-@define-color    titlebutton_bg_c                      #181d1d;
-@define-color    titlebutton_bg_a_hov                  #404646;
-@define-color    titlebutton_bg_b_hov                  #303436;
-@define-color    titlebutton_bg_c_hov                  #181d1d;
+@define-color    titlebutton_bg_a                      #263036;
+@define-color    titlebutton_bg_b                      #262c33;
+@define-color    titlebutton_bg_c                      #191f23;
+@define-color    titlebutton_bg_a_hov                  #3c464c;
+@define-color    titlebutton_bg_b_hov                  #30363c;
+@define-color    titlebutton_bg_c_hov                  #191f23;
 @define-color    titlebutton_bg_a_act                  #0f1313;
 @define-color    titlebutton_bg_b_act                  #151919;
-@define-color    titlebutton_bg_c_act                  #181d1d;
-@define-color    titlebutton_bg_a_dis                  #333638;
+@define-color    titlebutton_bg_c_act                  #191f23;
+@define-color    titlebutton_bg_a_dis                  #232628;
 @define-color    titlebutton_border                    #0a0a0a;
 
 @define-color    button_fg_sugg_color                  #ffffff;
@@ -228,15 +228,15 @@
 @define-color    button_bgcirc_flt_b                   #969696;
 
 /* menus and menubars */
-@define-color    menu_bg                               #414747;
+@define-color    menu_bg                               #384248;
 @define-color    menu_bg_hover                         #4b5254;
 @define-color    menu_bdr                              #373b3d;
 @define-color    menu_arr                              #373b3d;
 @define-color    menu_arr_dis                          #282d2f;
-@define-color    menuitem_fg_normal                    #f0f0f0;
+@define-color    menuitem_fg_normal                    #CFCFCF;
 @define-color    menuitem_fg_hover                     #FFFFFF;
 @define-color    menuitem_bg_hover                     @theme_accent_color;
-@define-color    menuitem_fg_dis                       #6f6f6f;
+@define-color    menuitem_fg_dis                       #566164;
 @define-color    menuitem_separator                    #1b1f20;
 @define-color    headermenu_bg_hover                   #aab1b3;
 
@@ -279,14 +279,14 @@
 /* hdyview */
 @define-color    hdybutton_bg_hov                      #d0d0d0;
 @define-color    hdybutton_bg_chk                      #d8d8d8;
-@define-color    hdyheadbutton_bg_a                    #555e5e;
-@define-color    hdyheadbutton_bg_b                    #4a4e4e;
-@define-color    hdyheadbutton_bdr                     #636969;
-@define-color    hdyheadbutton_bdr_r                   #424949;
-@define-color    hdyheadbutton_chk_bg_a                #606767;
-@define-color    hdyheadbutton_chk_bg_b                #4c5050;
-@define-color    hdyheadbutton_chk_bdr                 #6a7070;
-@define-color    hdyheadbutton_chk_bdr_r               #424949;
+@define-color    hdyheadbutton_bg_a                    #535c63;
+@define-color    hdyheadbutton_bg_b                    #494f53;
+@define-color    hdyheadbutton_bdr                     #63696c;
+@define-color    hdyheadbutton_bdr_r                   #42494c;
+@define-color    hdyheadbutton_chk_bg_a                #606970;
+@define-color    hdyheadbutton_chk_bg_b                #4c5054;
+@define-color    hdyheadbutton_chk_bdr                 #6a7073;
+@define-color    hdyheadbutton_chk_bdr_r               #42494c;
 
 /* base background color of insensitive widgets */
 @define-color    insensitive_bg_color                  #c2c6c6;
