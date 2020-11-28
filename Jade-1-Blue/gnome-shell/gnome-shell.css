@@ -1342,7 +1342,8 @@ StScrollBar StButton#hhandle:active {
 }
 
 .world-clocks-button, 
-.weather-button { 
+.weather-button,
+.events-button { 
     color: #CCDDEE; 
     /*margin: 4px 8px;*/
     padding: 12px; 
@@ -1363,7 +1364,9 @@ StScrollBar StButton#hhandle:active {
 .world-clocks-button:hover, 
 .world-clocks-button:focus, 
 .weather-button:hover, 
-.weather-button:focus { 
+.weather-button:focus,
+.events-button:hover,
+.events-button:hover { 
     color: #CCDDEE; 
     border:1px solid #0066FF; /* coloraccent */
     background-color:rgba(0,61,128,0.8); /* coloraccent */
@@ -1371,10 +1374,26 @@ StScrollBar StButton#hhandle:active {
 
 .datemenu-today-button:active, 
 .world-clocks-button:active, 
-.weather-button:active { 
+.weather-button:active,
+.events-button:active { 
     color: #CCDDEE; 
     background-color: rgba(40, 52, 59, 0.6); 
 }
+
+.events-button .events-list,
+.weather-button .weather-header.location {
+    color: #cfcfcf; 
+}
+.events-button .events-title,
+.weather-button .weather-header {
+    color: #F9F9F9;
+}
+.events-button .event-time,
+.weather-button .weather-forecast-time {
+    color: #cfcfcf;
+    font-feature-settings: "tnum";
+}
+
 
 .message-list-section-title:active, 
 .events-section-title:active { 
@@ -1915,7 +1934,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .message-media-control:insensitive { 
-    color: #8899AA;  
+    color: #8899AA;
     background-image: none; 
     background: transparent; 
 }
@@ -3306,20 +3325,6 @@ notification-close {
     background-gradient-end:#0045b4; /* coloraccent */
 }
 
-.button:hover { 
-    border:1px solid #080808;
-    background-gradient-direction:vertical;
-    background-gradient-start:#0056cb; /* coloraccent */
-    background-gradient-end:#0045b4; /* coloraccent */
-}
-
-.app-view-control:hover { 
-    color: #FFFFFF; 
-    border: 1px solid #AABBCC;
-    background-gradient-start :rgba(207, 216, 220, 0.18) !important; 
-    background-gradient-end: rgba(207, 216, 220, 0.18) !important; 
-}
-
 .summary-source-counter { 
     font-size: 10pt; 
     width: 1.6em; 
@@ -4293,6 +4298,20 @@ notification-close {
 #LookingGlassPropertyInspector:rtl { 
     border-radius: 0 2px 2px 0; 
     border-right-color: transparent; 
+}
+
+.button:hover { 
+    border:1px solid #080808;
+    background-gradient-direction:vertical;
+    background-gradient-start:#0056cb; /* coloraccent */
+    background-gradient-end:#0045b4; /* coloraccent */
+}
+
+.app-view-control:hover { 
+    color: #FFFFFF; 
+    border: 1px solid #AABBCC;
+    background-gradient-start :rgba(207, 216, 220, 0.18) !important; 
+    background-gradient-end: rgba(207, 216, 220, 0.18) !important; 
 }
 
 /* GNOME 3.34 */
