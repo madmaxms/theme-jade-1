@@ -46,6 +46,7 @@
 @define-color    button_bg_sugg_c_act                  #b42020;
 @define-color    button_bg_sugg_flt                    #a11010;
 @define-color    button_border_sugg                    #611010;
+@define-color    button_fg_sugg_shadow                 #000000;
 
 /* progress bar */
 @define-color    prgbar_bg_a                           #f43a3a;
@@ -118,9 +119,10 @@
 
 @define-color    tooltip_fg                            #f7f7f7;
 
-@define-color    separator                             #212121;
+@define-color    separator                             #969696;
+@define-color    header_separator                      #1b1f20;
 @define-color    notebook_separator                    #969696;
-@define-color    border_box                            #666666;
+@define-color    border_box                            #969696;
 
 /* entry */
 @define-color    entry_fg_color                        #212121;
@@ -194,11 +196,8 @@
 @define-color    titlebutton_bg_a_act                  #0f1313;
 @define-color    titlebutton_bg_b_act                  #151919;
 @define-color    titlebutton_bg_c_act                  #191f23;
-@define-color    titlebutton_bg_a_dis                  #232628;
+@define-color    titlebutton_bg_a_dis                  #303639;
 @define-color    titlebutton_border                    #0a0a0a;
-
-@define-color    button_fg_sugg_color                  #ffffff;
-@define-color    button_fg_sugg_shadow                 #000000;
 
 @define-color    button_fg_dest_color                  #f7f7f7;
 @define-color    button_bg_dest_a                      #d43724;
@@ -229,7 +228,7 @@
 
 /* menus and menubars */
 @define-color    menu_bg                               #384248;
-@define-color    menu_bg_hover                         #4b5254;
+@define-color    menu_bg_hover                         #aab1b3;
 @define-color    menu_bdr                              #373b3d;
 @define-color    menu_arr                              #373b3d;
 @define-color    menu_arr_dis                          #282d2f;
@@ -238,7 +237,6 @@
 @define-color    menuitem_bg_hover                     @theme_accent_color;
 @define-color    menuitem_fg_dis                       #566164;
 @define-color    menuitem_separator                    #1b1f20;
-@define-color    headermenu_bg_hover                   #aab1b3;
 
 @define-color    panel_bg                              #414747;
 @define-color    panel_bg_hov                          #515757;
@@ -357,4 +355,8 @@ read if you used those and something break with a version upgrade you're on your
 @define-color    wm_button_active_color_b              shade(@theme_base_color, 0.89);
 @define-color    wm_button_active_color_c              shade(@theme_base_color, 0.9);
 @define-color    content_view_bg                       @view_bg;
+
+@define-color    success_color                         #00cc66;
+@define-color    warning_color                         #F27835;
+@define-color    error_color                           #FC4138;
 
