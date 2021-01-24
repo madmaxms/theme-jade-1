@@ -26,8 +26,8 @@
 @define-color    view_bg_acceleditor                   #0066cc;
 
 /* entry */
-@define-color    entry_border_act                      #003399;
-@define-color    entry_border_act_shad                 #006eff;
+@define-color    entry_border_act                      #0060ff;
+@define-color    entry_border_act_shad                 #009fff;
 @define-color    entry_tag_a                           #005Cb9;
 @define-color    entry_tag_b                           #0057b6;
 @define-color    entry_tag_c                           #0055b3;
@@ -101,7 +101,7 @@
 @define-color    theme_fg_color_sub                    #909090;
 @define-color    theme_fg_color_dis                    #858786;
 
-@define-color    inline_bg                             #b1b2b3;
+@define-color    inline_bg                             #dedede;
 
 /* sidebar colours */
 @define-color    assistant_sidebar_bg                  #3e4243;
@@ -138,9 +138,9 @@
 
 @define-color    titleentry_fg_color                   #ffffff;
 @define-color    titleentry_fg_dis                     #858786;
-@define-color    titleentry_bg_a                       #555758;
-@define-color    titleentry_bg_b                       #575a5b;
-@define-color    titleentry_bg_c                       #606566;
+@define-color    titleentry_bg_a                       #505a5f;
+@define-color    titleentry_bg_b                       #546063;
+@define-color    titleentry_bg_c                       #596269;
 @define-color    titleentry_bg_under_a                 #FFFFFF;
 @define-color    titleentry_bg_under_b                 #000000;
 @define-color    titleentry_bg_shadow                  #000000;
@@ -159,10 +159,8 @@
 @define-color    header_fg_color_sub                   #cccccc;
 @define-color    header_bg_a                           #414b51;
 @define-color    header_bg_b                           #384248;
-@define-color    pathbar_bg                            @theme_base_color;
-@define-color    titlepathbar_bg                       #384248;
-@define-color    pathbar_bdr                           #444444;
-@define-color    pathbar_bdr_sub                       #222222;
+@define-color    pathbar_bg                            #4c555a;
+@define-color    pathbar_bdr                           #222222;
 
 /* buttons */
 @define-color    button_fg_color                       #363636;
@@ -179,8 +177,6 @@
 @define-color    button_bg_a_act                       #8f8f8f;
 @define-color    button_bg_b_act                       #a1a1a1;
 @define-color    button_bg_c_act                       #aaaaaa;
-@define-color    button_bg_a_dis                       #c2c6c6;
-@define-color    button_bg_a_bkdrp                     #c2c6c6;
 @define-color    button_border                         #a9a9a9;
 
 @define-color    titlebutton_fg_color                  #ffffff;
@@ -252,6 +248,7 @@
 @define-color    notebook_border                       #818283;
 @define-color    notebook_border_sel                   @theme_accent_color;
 @define-color    notebook_border_hov                   #000;
+@define-color    notebook_bar                          #b1b2b3;
 @define-color    section_bg                            #c8c9ca;
 
 /* scrollbar */
