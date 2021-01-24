@@ -1,7 +1,7 @@
 # Jade-1
 A fork of the original Linux Mint theme with dark menus, more intensive green and some other modifications. 
 
-![alt tag](https://github.com/madmaxms/theme-jade-1/blob/master/screenshot.png)
+![alt tag](https://github.com/madmaxms/theme-jade-1/blob/teal/screenshot.png)
 
 ## Compatibility
 cinnamon version `3.2`
