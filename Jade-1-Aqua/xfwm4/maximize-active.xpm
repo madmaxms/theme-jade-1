@@ -1,9 +1,21 @@
-Internal Server Error
-
-The server encountered an internal error and was unable to complete your request.
-Please contact the server administrator if this error reappears multiple times, please include the technical details below in your report.
-More details can be found in the server log.
-c #57646C",
+/* XPM */
+static char * maximize_active_xpm[] = {
+"28 36 98 2",
+"  	c None",
+". 	c #323A3F",
+"+ 	c #414B51",
+"@ 	c #414B50",
+"# 	c #414A50",
+"$ 	c #404A50",
+"% 	c #404950",
+"& 	c #3F494F",
+"* 	c #58646F",
+"= 	c #6C7887",
+"- 	c #758493",
+"; 	c #7A8997",
+"> 	c #6B7986",
+", 	c #59636E",
+"' 	c #57646C",
 ") 	c #768693",
 "! 	c #748391",
 "~ 	c #697787",
