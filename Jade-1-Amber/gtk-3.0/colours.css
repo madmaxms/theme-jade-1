@@ -14,7 +14,7 @@
 @define-color    theme_unfocused_selected_bg_color     @theme_accent_color;
 
 /* sidebar colours */
-@define-color    sidebar_bg                            #3e4243;
+@define-color    sidebar_bg                            #384147;
 @define-color    sidebar_hovering                      #999999;
 @define-color    sidebar_fg                            #ffffff;
 
@@ -88,7 +88,7 @@
 @define-color    box_shadow                            #ffffff;   
 
 /* widget background color */
-@define-color    theme_bg_color                        #c5c5c5;
+@define-color    theme_bg_color                        #c9c9c9;
 @define-color    theme_bg_color_hov                    #b0b0b0;
 @define-color    theme_bg_color_from                   #454c4c;
 @define-color    theme_bg_color_to                     #2d3232;
@@ -104,7 +104,7 @@
 @define-color    inline_bg                             #dedede;
 
 /* sidebar colours */
-@define-color    assistant_sidebar_bg                  #3e4243;
+@define-color    assistant_sidebar_bg                  #384147;
 @define-color    assistant_sidebar_bg_lbl              #5fa24a;
 @define-color    assistant_sidebar_fg                  #ffffff;
 
