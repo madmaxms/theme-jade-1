@@ -8,7 +8,6 @@
     color: @theme_fg_color;
     background-color: @theme_bg_color;
 }
-
 .background:backdrop {
     color: @theme_fg_color_dis;
     background-color: @theme_bg_color;
@@ -2231,6 +2230,7 @@ searchbar,
 
 toolbar {
     padding: 4px 3px 3px 4px; 
+    background-color: @theme_bg_color;
 }
 .osd toolbar {
     background-color: transparent; 
@@ -6062,7 +6062,7 @@ scrolledwindow overshoot.right:backdrop {
     border: none;
     box-shadow: none;
 }
-scrolledwindow undershoot.top {
+scrolledwindow:first-child undershoot.top {
     background-color: transparent;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
     padding-top: 1px;
@@ -6070,10 +6070,10 @@ scrolledwindow undershoot.top {
     background-repeat: repeat-x;
     background-origin: content-box;
     background-position: center top;
-    border: none;
+    border-bottom: none;
     box-shadow: none;
 }
-scrolledwindow undershoot.bottom {
+scrolledwindow:first-child undershoot.bottom {
     background-color: transparent;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
     padding-bottom: 1px;
@@ -6084,7 +6084,7 @@ scrolledwindow undershoot.bottom {
     border: none;
     box-shadow: none;
 }
-scrolledwindow undershoot.left {
+scrolledwindow:first-child undershoot.left {
     background-color: transparent;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
     padding-left: 1px;
@@ -6095,7 +6095,7 @@ scrolledwindow undershoot.left {
     border: none;
     box-shadow: none;
 }
-scrolledwindow undershoot.right {
+scrolledwindow:first-child undershoot.right {
     background-color: transparent;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%);
     padding-right: 1px;
@@ -6215,7 +6215,6 @@ list-row.button:hover,
 .header-bar list-row.button.titlebutton:hover,
 .titlebar list-row.button.titlebutton:hover {
     transition: none;
-    background-color: #f00;
 }
 .list-row:selected .button:disabled > .label,
 .list-row:selected .header-bar .button.titlebutton:disabled > .label,
@@ -8327,7 +8326,7 @@ button.titlebutton.close:not(.appmenu):backdrop:hover {
 
 *:not(button) {
     outline-color: alpha(currentColor,0.3);
-    outline-style: dashed;
+    outline-style: none;
     outline-width: 1px;
     -gtk-outline-radius: 2px; 
 }/*
@@ -8337,7 +8336,7 @@ button.titlebutton.close:not(.appmenu):backdrop:hover {
 
 button {
     outline-color: alpha(currentColor,0.3);
-    outline-style: dashed;
+    outline-style: none;
     outline-offset: -3px;
     outline-width: 1px;
     -gtk-outline-radius: 3px;     
