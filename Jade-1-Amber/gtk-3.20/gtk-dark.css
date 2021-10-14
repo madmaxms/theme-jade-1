@@ -1,4 +1,4 @@
-@import url("../gtk-3.0/colours.css");
+@import url("../gtk-3.0/colours-dark.css");
 
 
 /***************
@@ -308,13 +308,6 @@ separator {
 headerbar separator,
 .titlebar separator {
     background: image(@header_separator);
-    min-width: 1px;
-    min-height: 1px;
-}
-
-menu separator,
-.menuitem separator {
-    background: image(@menuitem_separator);
     min-width: 1px;
     min-height: 1px;
 }
