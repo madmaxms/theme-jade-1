@@ -14,7 +14,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ************************************************************************************************* */
-@import url("colours.css");
+@import url("colCommon.css");
+@import url("colAccents.css");
 
 * {
     padding: 0;
