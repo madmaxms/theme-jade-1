@@ -33,8 +33,8 @@
 @define-color    assistant_sidebar_fg                  #cccccc;
 
 /* view */
-@define-color    view_bg                               #202a2f; /*2f3738*/
-@define-color    view_bg_hover                         #ffffff;
+@define-color    view_bg                               #4b555b; /*2f3738*/
+@define-color    view_bg_hover                         #4b555b;
 @define-color    view_fg                               #bdbebf;
 @define-color    view_fg_dis                           #566164;
 @define-color    view_fg_hov                           #bccee1;
@@ -157,7 +157,7 @@
 
 /* menus and menubars */
 @define-color    menu_bg                               @popover;
-@define-color    menu_bg_hover                         #4b5254;
+@define-color    menu_bg_hover                         #565E63;
 @define-color    menu_bdr                              #000000;
 @define-color    menu_arr                              #373b3d;
 @define-color    menu_arr_dis                          #282d2f;
@@ -167,7 +167,7 @@
 @define-color    menuitem_fg_dis                       #566164;
 @define-color    menuitem_separator_a                  #1b1f20;
 @define-color    menuitem_separator_b                  #60686D;
-@define-color    headermenu_bg_hover                   #4b5254;
+@define-color    headermenu_bg_hover                   @menu_bg_hover;
 @define-color    popover                               #384248;
 @define-color    popover_separator_a                   #1b1f20;
 @define-color    popover_separator_b                   #60686D;
